@@ -35,4 +35,14 @@ public class Library {
         }
         System.out.println("Invalid Book ID.");
     }
+
+    public void searchBook(int id) {
+        for (Book book : books) {
+            if (book.getBookId() == id) {
+                System.out.println(book);
+                return;
+            }
+        }
+        System.out.println("Book not found.");
+    }
 }

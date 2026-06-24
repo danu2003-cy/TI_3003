@@ -13,7 +13,8 @@ public class Main {
             System.out.println("2. Display Books");
             System.out.println("3. Issue Book");
             System.out.println("4. Return Book");
-            System.out.println("5. Exit");
+            System.out.println("5. Search Book");
+            System.out.println("6. Exit");
 
             int choice = sc.nextInt();
 
@@ -48,6 +49,12 @@ public class Main {
                     break;
 
                 case 5:
+                    System.out.print("Enter Book ID: ");
+                    int searchId = sc.nextInt();
+                    library.searchBook(searchId);
+                    break;
+
+                case 6:
                     System.exit(0);
             }
         }
