@@ -35,6 +35,6 @@ public class Book{
     @Override
     public String toString() {
         return bookId + " | " + title + " | " + author +
-                " | " + (issued ? "Issued" : "Available");
+                " | " + (issued ? "Issued " : "Available ");
     }
 }
